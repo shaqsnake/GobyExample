@@ -14,7 +14,7 @@ const (
 )
 
 var urls = []string{
-	"http://www.google.com/",
+	"http://www.baidu.com/",
 	"http://golang.org/",
 	"http://blog.golang.org",
 }
