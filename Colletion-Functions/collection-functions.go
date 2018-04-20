@@ -47,7 +47,7 @@ func Filter(vs []string, f func(string) bool) []string {
 }
 
 func Map(vs []string, f func(string) string) []string {
-	vsm := make([]string, 0)
+	vsm := make([]string, len(vs))
 	for i, v := range vs {
 		vsm[i] = f(v)
 	}
