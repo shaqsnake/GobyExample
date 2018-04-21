@@ -1,11 +1,15 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"time"
+	"os"
 )
 
 func main() {
-	fmt.Println("hello world")
-	fmt.Println("The time is ", time.Now())
+	reader := bufio.NewReader(os.Stdin)
+	input, _ := reader.ReadString('\n')
+
+	fmt.Println("Hello, World.")
+	fmt.Println(input)
 }
